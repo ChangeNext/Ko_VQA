@@ -5,7 +5,7 @@ dir = ["accessory", "animal", "appliance", "electronic", "food", "furniture", "i
 level = ["상", "중", "하"]
 
 
-annotation_json_list = []
+annotation_json_list = [ ]
 images_json_list = []
 
 question_json_list = []

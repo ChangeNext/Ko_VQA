@@ -8,7 +8,7 @@ import json
 dir = ["accessory", "animal", "appliance", "electronic", "food", "furniture", "indoor", "kitchen", "outdoor", "person", "sports", "vehicle"]
 level = ["상", "중", "하"]
 
-images_json_list = []
+images_json_list = [ ]
 for dir_name in dir:
     for level_name in level:
         with open(f'./dataset/label_data/{dir_name}/{level_name}_train_{dir_name}/images.json') as f:
