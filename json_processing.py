@@ -32,7 +32,7 @@ for dir_name in dir:
             question_json = json.load(f)
             question_json_list.append(question_json)
             
-image_dict = { }
+image_dict = {}
 for image_json in images_json_list:
     for image in image_json["images"]:
         image_dict[image["image_id"]] =  image["image"]            

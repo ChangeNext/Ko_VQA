@@ -15,7 +15,7 @@ for dir_name in dir:
             images_json = json.load(f)
             images_json_list.append(images_json)
 
-image_dict = {}
+image_dict = { }
 for image_json in images_json_list:
     for image in image_json["images"]:
         image_dict[image["image"]] = image["image_id"]
