@@ -4,14 +4,17 @@ import pandas as pd
 dir = ["accessory", "animal", "appliance", "electronic", "food", "furniture", "indoor", "kitchen", "outdoor", "person", "sports", "vehicle"]
 level = ["상", "중", "하"]
 
+
 annotation_json_list = []
 images_json_list = []
+
 question_json_list = []
 
 image_name = []
 image_id = []
 question = []
 answer = []
+
 
 for dir_name in dir:
     for level_name in level:
@@ -29,7 +32,7 @@ for dir_name in dir:
             question_json = json.load(f)
             question_json_list.append(question_json)
             
-image_dict = {}
+image_dict = { }
 for image_json in images_json_list:
     for image in image_json["images"]:
         image_dict[image["image_id"]] =  image["image"]            
